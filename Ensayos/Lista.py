@@ -44,19 +44,19 @@ SumaListas = lista + lista2 + lista3
 print(SumaListas)
 print("___________________________________________________________________________________________________________\n") #Estetica
 
-#Para buscar Martes seria asi:
+#Buscar Martes seria asi:
 print(f"BUSCAR Martes: {"Martes" in SumaListas}")
 #OBTENEMOS FALSE O TRUE
 
-#Para saber exactamente la posicion de Martes:
+#Posicion de Martes:
 print(f"POSICION Martes: {SumaListas.index("Martes")} ")
 
-#Para saber cuantas veces aparece Martes en la lista:
+#Cuantas veces aparece Martes en la lista:
 print(f"CANTIDAD de Martes [ {SumaListas.count("Martes")} ] veces en la lista")
 
 print("___________________________________________________________________________________________________________\n") #Estetica
 
-#Para eliminar elementos usamos:
+#Eliminar elementos usamos:
 print(f"El elemento posicion 11 de la lista es: {SumaListas[11]}")
 SumaListas.pop(11) #Hemos eliminado el elemento de la posicion 0 ("Day","Dayanna","Dayarana")
 print("\nEliminando el elemento de la posicion 11 de la lista: ",SumaListas)
