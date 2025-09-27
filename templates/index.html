@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center; margin-top: 50px;">
+    <h1>🚗 Bienvenido a Movilidad Universitaria</h1>
+    <p>Organiza viajes compartidos con tus compañeros.</p>
+
+    {% if current_user.is_authenticated %}
+        <a href="{{ url_for('create_trip') }}">📍 Crear un viaje</a> |
+        <a href="{{ url_for('list_trips') }}">🚌 Ver viajes disponibles</a> |
+        <a href="{{ url_for('profile') }}">👤 Mi perfil</a> |
+        <a href="{{ url_for('logout') }}">🚪 Cerrar sesión</a>
+    {% else %}
+        <a href="{{ url_for('login') }}">🔑 Iniciar sesión</a> |
+        <a href="{{ url_for('register') }}">📝 Registrarse</a>
+    {% endif %}
+</div>
+{% endblock %}
